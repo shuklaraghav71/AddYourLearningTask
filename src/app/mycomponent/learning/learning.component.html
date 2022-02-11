@@ -1,0 +1,7 @@
+<app-add-learning (learningadd)="addlearning($event)"></app-add-learning>
+
+
+<h4>Yours learning</h4>
+<div *ngFor="let learning of learning">
+    <app-learning-items [learning]="learning" (learningDelete)="deleteLearning($event)"> </app-learning-items>
+</div>

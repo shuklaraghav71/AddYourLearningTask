@@ -1,0 +1,15 @@
+<div class="my-3">
+    <h4>add yours learning</h4>
+    <form (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="title">title</label>
+            <input type="text" [(ngModel)]="title" class="form-control" id="title" name="title">
+        </div>
+
+        <div class="mb-3">
+            <label for="decas">descreption</label>
+            <input type="text" [(ngModel)]="dacas" class="form-control" id="decas" name="decas">
+        </div>
+
+        <button type="submit" class="btn btn-primary">AddLearning</button>
+    </form>
